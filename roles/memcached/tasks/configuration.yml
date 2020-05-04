@@ -1,0 +1,20 @@
+---
+
+- name: Push configuration for memcached instances
+  template:
+    src: memcached.conf.j2
+    dest: "/etc/memcached/conf/{{ memcache_instance.name}}_{{ memcache_instance.tport }}.conf"
+  become: true
+  become_user: memcached
+  loop: "{{ memcache_instances }}"
+  loop_control:
+    loop_var: memcache_instance 
+
+- name: Copy systemctl startup script 
+  template:
+    src: memcached.service.j2
+    dest: "/etc/systemd/system/{{ memcache_instance.name}}_{{ memcache_instance.tport }}.service"
+  loop: "{{ memcache_instances }}"
+  loop_control:
+    loop_var: memcache_instance
+  notify: Reload Systemctl Daemon

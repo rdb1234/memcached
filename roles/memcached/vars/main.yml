@@ -1,0 +1,221 @@
+---
+
+
+memcache_instances:
+
+  - name: pspdf_qa
+    tport: 42301
+    uport: 42301
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/pspdf_qa_42301.pid"
+  
+  - name: csdcs_qa
+    tport: 42302
+    uport: 42302
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/csdcs_qa_42302.pid"
+  
+  - name: doreportportal_qa
+    tport: 42303
+    uport: 42303
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/doreportportal_qa_42303.pid"
+  
+  - name: dodatacenter_qa
+    tport: 42304
+    uport: 42304
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/dodatacenter_qa_42304.pid"
+  
+  - name: doportfolioanalysis_qa
+    tport: 42305
+    uport: 42305
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/doportfolioanalysis_qa_42305.pid"
+  
+  - name: doattribution_qa
+    tport: 42306
+    uport: 42306
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/doattribution_qa_42306.pid"
+  
+  - name: donotes_qa
+    tport: 42307
+    uport: 42307
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/donotes_qa_42307.pid"
+  
+  - name: mismp_qa
+    tport: 42308
+    uport: 42308
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/mismp_qa_42308.pid"
+  
+  - name: pspdfquantsmarttext_qa
+    tport: 42309
+    uport: 42309
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/pspdfquantsmarttext_qa_42309.pid"
+  
+  - name: psuim_qa
+    tport: 42310
+    uport: 42310
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/psuim_qa_42310.pid"
+  
+  - name: coresvc_dev
+    tport: 41301
+    uport: 41301
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/coresvc_dev_41301.pid"
+  
+  - name: csdcs_dev
+    tport: 41302
+    uport: 41302
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/csdcs_dev_41302.pid"
+  
+  - name: doreportportal_dev
+    tport: 41303
+    uport: 41303
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/doreportportal_dev_41303.pid"
+  
+  - name: dodatacenter_dev
+    tport: 41304
+    uport: 41304
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/dodatacenter_dev_41304.pid"
+  
+  - name: doportfolioanalysis_dev
+    tport: 41305
+    uport: 41305
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/doportfolioanalysis_dev_41305.pid"
+  
+  - name: doattribution_dev
+    tport: 41306
+    uport: 41306
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/doattribution_dev_41306.pid"
+  
+  - name: donotes_dev
+    tport: 41307
+    uport: 41307
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/donotes_dev_41307.pid"
+  
+  - name: mismp_dev
+    tport: 41308
+    uport: 41308
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/mismp_dev_41308.pid"
+  
+  - name: excel_dev
+    tport: 41309
+    uport: 41309
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/excel_dev_41309.pid"
+  
+  - name: doexcelapi_dev
+    tport: 41310
+    uport: 41310
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/doexcelapi_dev_41310.pid"
+  
+  - name: psuim_dev
+    tport: 41311
+    uport: 41311
+    max_mem: 256
+    pidfile: "{{ PID_DIRECTORY }}/psuim_dev_41311.pid"
+  
+  - name: pspdf_stg
+    tport: 43301
+    uport: 43301
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/pspdf_stg_43301.pid"
+  
+  - name: csdcs_stg
+    tport: 43302
+    uport: 43302
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/csdcs_stg_43302.pid"
+  
+  - name: fundapi_stg
+    tport: 43303
+    uport: 43303
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/fundapi_stg_43303.pid"
+  
+  - name: doreportportal_stg
+    tport: 43304
+    uport: 43304
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/doreportportal_stg_43304.pid"
+  
+  - name: dodatacenter_stg
+    tport: 43305
+    uport: 43305
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/dodatacenter_stg_43305.pid"
+  
+  - name: doportfolioanalysis_stg
+    tport: 43306
+    uport: 43306
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/doportfolioanalysis_stg_43306.pid"
+  
+  - name: doattribution_stg
+    tport: 43307
+    uport: 43307
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/doattribution_stg_43307.pid"
+  
+  - name: donotes_stg
+    tport: 43308
+    uport: 43308
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/donotes_stg_43308.pid"
+  
+  - name: ads_stg
+    tport: 43309
+    uport: 43309
+    max_mem: 2048
+    pidfile: "{{ PID_DIRECTORY }}/ads_stg_43309.pid"
+  
+  - name: pscharts_stg
+    tport: 43310
+    uport: 43310
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/pscharts_stg_43310.pid"
+  
+  - name: pssal_stg
+    tport: 43311
+    uport: 43311
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/pssal_stg_43311.pid"
+  
+  - name: pssalbeta_stg
+    tport: 43312
+    uport: 43312
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/pssalbeta_stg_43312.pid"
+  
+  - name: mismp_stg
+    tport: 43313
+    uport: 43313
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/mismp_stg_43313.pid"
+  
+  - name: pspdfquantsmarttext_stg
+    tport: 43314
+    uport: 43314
+    max_mem: 512
+    pidfile: "{{ PID_DIRECTORY }}/pspdfquantsmarttext_stg_43314.pid"
+  
+  - name: psuim_stg
+    tport: 43315
+    uport: 43315
+    max_mem: 1024
+    pidfile: "{{ PID_DIRECTORY }}/psuim_stg_43315.pid"
+

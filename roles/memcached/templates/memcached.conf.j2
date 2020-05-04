@@ -1,0 +1,8 @@
+
+TPORT="{{ memcache_instance.tport }}"
+USER="memcached"
+MAXCONN="{{ MAX_CONNECTIONS }}" 
+CACHESIZE="{{ memcache_instance.max_mem }}"
+UPORT="{{ memcache_instance.uport }}"
+PIDFILE="{{ memcache_instance.pidfile }}"
+OPTIONS="-v -B auto"

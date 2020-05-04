@@ -1,0 +1,7 @@
+---
+# tasks file for memcached
+
+- include: installation.yml
+- include: configuration.yml
+- include: service.yml
+

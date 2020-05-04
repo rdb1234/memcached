@@ -1,0 +1,16 @@
+---
+
+- name: Reload systemctl daemon
+  systemd:
+    daemon_reload: yes
+
+- name: Start Memcache Instances
+  service:
+    name: "{{ memcache_instance.name }}_{{ memcache_instance.tport }}"
+    state: started
+    enabled: yes
+  loop: "{{ memcache_instances }}"
+  loop_control:
+    loop_var: memcache_instance
+
+...

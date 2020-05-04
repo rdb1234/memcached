@@ -1,0 +1,11 @@
+---
+all:
+  children:
+    memcached_outpost_dallas_nonprod:
+      hosts:
+        172.31.126.41:
+        172.31.122.13:
+        172.31.114.114:
+
+...
+

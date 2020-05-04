@@ -1,0 +1,9 @@
+---
+# defaults file for memcached
+
+MAX_CONNECTIONS: 1024
+PID_DIRECTORY: "/var/run/memcached"
+BINDING_PROTOCOL: "auto"
+CONF_DIRECTORY: "/etc/memcached/conf"
+service_name_to_restart: []
+...

@@ -1,0 +1,25 @@
+---
+
+- name: Create a user "memcached"
+  user:
+    name: memcached
+    shell: /bin/bash
+#    group: memcached
+    uid: 1005
+    state: present
+
+- name: Install Memcached Package
+  yum:
+    name: memcached-1.4.15
+    state: latest
+
+- name: Create a directory to hold memcached instances PIDs.
+  file:
+    name: "{{ item }}"
+    owner: memcached
+    group: memcached
+    state: directory
+  with_items:
+    - "{{ PID_DIRECTORY }}"
+    - "{{ CONF_DIRECTORY }}"
+  

@@ -1,0 +1,10 @@
+[Unit]
+Description=" Memcache Daemon {{memcache_instance.name }} on port {{ memcache_instance.tport }}"
+After=network.target
+
+[Service]
+EnvironmentFile={{ CONF_DIRECTORY }}/{{ memcache_instance.name }}_{{ memcache_instance.tport }}.conf
+ExecStart=/usr/bin/memcached -u ${USER} -p ${TPORT} -m ${CACHESIZE} -c ${MAXCONN} -U ${UPORT} -P ${PIDFILE} $OPTIONS
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+---
+# handlers file for memcached
+
+- name: Reload Systemctl Daemon
+  systemd:
+    daemon_reload: yes
+

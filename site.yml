@@ -1,0 +1,9 @@
+---
+- hosts: memcached_outpost_dallas_nonprod
+  #serial: 3
+  roles:
+    - memcached
+
+...
+  
+
